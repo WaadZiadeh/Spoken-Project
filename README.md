@@ -30,22 +30,12 @@ Can traditional speech/signal-processing features capture acoustic artifacts tha
                       ↓
                  EVALUATION
                       ↓
- Accuracy / Precision / Recall
- F1 / Confusion Matrix / ROC-AUC
+      Accuracy / Precision / Recall
+     F1 / Confusion Matrix / ROC-AUC
                       ↓
                 COMPARISON
                       ↓
               GENERALIZATION
 
 
- Training set
-     ↓
-Train model
 
-Validation set
-     ↓
-Choose/tune model
-
-Test set
-     ↓
-Final evaluation
