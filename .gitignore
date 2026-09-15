@@ -1,0 +1,12 @@
+# Audio and dataset archives must stay outside Git history.
+*.flac
+*.wav
+*.tar
+*.tar.gz
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+# Generated experiment artifacts are reproducible and may be large.
+results/mfcc_svm/*
+!results/mfcc_svm/.gitkeep

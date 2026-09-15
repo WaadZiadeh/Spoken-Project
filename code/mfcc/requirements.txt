@@ -1,0 +1,7 @@
+numpy
+pandas
+# Explicit MFCC mel_norm support
+librosa>=0.11.0
+scikit-learn
+matplotlib
+joblib

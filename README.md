@@ -39,3 +39,10 @@ Can traditional speech/signal-processing features capture acoustic artifacts tha
 
 
 
+
+## Waad: MFCC + SVM experiment
+
+See [MFCC implementation and Colab instructions](code/mfcc/README.md). This separate
+experiment uses the existing train/validation/test CSVs, caches 40-dimensional
+MFCC features, selects SVM parameters on validation F1, and saves test metrics
+under `results/mfcc_svm/`. Dataset audio stays in Drive; the LFCC notebook is unchanged.
