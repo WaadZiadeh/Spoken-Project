@@ -1,0 +1,49 @@
+==============================
+MFCC + SVM FINAL RESULTS
+==============================
+Dataset: ASVspoof 2021 DF
+Feature type: MFCC
+MFCC coefficients: 20
+Feature dimension: 40
+Sample rate: 16000 Hz
+Configuration: {"center": true, "dct_type": 2, "hop_length": 256, "lifter": 0, "n_fft": 512, "n_mels": 40, "n_mfcc": 20, "norm": "ortho", "pad_mode": "constant", "peak_normalize": true, "power": 2.0, "res_type": "soxr_hq", "sample_rate": 16000, "window": "hann"}
+Random state: 42
+Labels: bonafide=0, spoof=1 (positive)
+train samples: 7749; class distribution: {'spoof': 3875, 'bonafide': 3874}
+val samples: 1660; class distribution: {'bonafide': 830, 'spoof': 830}
+test samples: 1661; class distribution: {'bonafide': 831, 'spoof': 830}
+
+Best SVM:
+Kernel: rbf
+C: 10.0
+Gamma: 0.1
+
+VALIDATION RESULTS
+validation_accuracy: 0.954819
+validation_precision: 0.946746
+validation_recall: 0.963855
+validation_f1: 0.955224
+validation_roc_auc: 0.990277
+
+TEST RESULTS
+accuracy: 0.946418
+precision: 0.949091
+recall: 0.943373
+f1: 0.946224
+roc_auc: 0.988955
+eer: 0.053012
+eer_percent: 5.301205
+EER method: linear interpolation of empirical ROC at FPR = 1 - TPR
+rows=true, columns=predicted; [Bonafide, Spoof]
+[[789  42]
+ [ 47 783]]
+
+              precision    recall  f1-score   support
+
+    Bonafide       0.94      0.95      0.95       831
+       Spoof       0.95      0.94      0.95       830
+
+    accuracy                           0.95      1661
+   macro avg       0.95      0.95      0.95      1661
+weighted avg       0.95      0.95      0.95      1661
+
